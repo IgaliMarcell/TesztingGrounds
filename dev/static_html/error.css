@@ -1,0 +1,66 @@
+.h-33{
+  height: 33.333%;
+}
+button{
+  width: 15%;
+  font-family: customInter;
+  background-color: white;
+}
+button:hover{
+  transition: 0.25s;
+  background-color: #bdc3c7;
+}
+img{
+  transition: transform 1s linear;
+}
+
+/* Font-Family */
+@font-face {
+  font-family: customInter;
+  src: url(../res/Inter.ttf);
+}
+#errorId{
+  font-family: customInter;
+}
+#errorMsg{
+  font-family: customInter;
+  color: grey;
+}
+
+/* Responsive */
+@media (max-width: 699px) {
+  img {
+  width: 30%;
+  }
+  #backBtnLabel{
+  font-size: 4vw;
+  }
+  button{
+  width: 45%;
+  }
+}
+@media (min-width: 700px) {
+  img {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  img {
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  img {
+    width: 20%;
+  }
+}
+@media (min-width: 1200px) {
+  img {
+    width: 20%;
+  }
+}
+@media (min-width: 1400px) {
+  img {
+    width: 15%;
+  }
+}

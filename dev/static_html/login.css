@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+}
+#loginContainer {
+    max-width: 400px;
+}
+.iconInputBox {
+    border: 1px solid var(--black);
+    border-radius: 7.5px;
+    padding: 3px;
+}
+.iconInputBox:hover{
+    cursor: text;
+    transition: 0.2s ease-in-out;
+    transform: scale(1.05);
+}
+.iconInputBox > div > input{
+    width: 100%;
+}
+.iconInput:placeholder-shown {
+    font-style: italic;
+}
+.iconCustomButton {
+    width: 100%;
+    border: 1px solid var(--black);
+    border-radius: 7.5px;
+    padding: 3px;
+}
+.iconCustomButton:hover{
+    cursor: pointer;
+    background-color: var(--grey);
+    transition: 0.2s ease-in-out;
+    transform: scale(1.05) rotate(2deg);
+}
+.iconCustomButtonImage {
+    width: 24px;
+    height: 24px;
+}
+.registerCont{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.registerCont > a{
+    text-decoration: none;
+    color: var(--grey);
+    font-weight: bolder;
+}
+#error{
+    text-align: center;
+}
+#errorMsg{
+    color: var(--error);
+}
+
+@media (max-width: 330px) { 
+    #loginContainer {
+        max-width: 250px;
+    }
+    #responsive{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .iconCustomButton{
+        margin-bottom: .5rem !important;
+    }
+}
+@media (max-width: 992px) { 
+    html, body {
+        height: 80%;
+    }
+}

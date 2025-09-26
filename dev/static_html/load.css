@@ -1,0 +1,74 @@
+.page{
+  background-color: grey;
+}
+.container{
+  background-color: aqua;
+}
+.h-33{
+  height: 33.333%;
+}
+
+/* Font-Family */
+@font-face {
+  font-family: customInter;
+  src: url(../res/Inter.ttf);
+}
+.interFont{
+  font-family: customInter;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  img {
+    width: 20%;
+  }
+}
+@media (min-width: 576px) {
+  img {
+    width: 15%;
+  }
+}
+@media (min-width: 768px) {
+  img {
+    width: 12%;
+  }
+}
+@media (min-width: 992px) {
+  img {
+    width: 10%;
+  }
+}
+@media (min-width: 1200px) {
+  img {
+    width: 10%;
+  }
+}
+@media (min-width: 1400px) {
+  img {
+    width: 7%;
+  }
+}
+
+/* Animation */
+img{
+  animation-name: load;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes load{
+
+  0%{
+    scale: 1;
+  }
+  33.3%{
+    scale: 0.75;
+  }
+  66.6%{
+    scale: 1.25;
+  }
+  100%{
+    scale: 1;
+    transform: rotate(360deg)
+  }
+}

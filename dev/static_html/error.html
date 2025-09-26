@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error.html</title> 
+    <link rel="stylesheet" href="../res/bootstrap.min.css">
+    <link rel="stylesheet" href="../res/global.css">
+    <link rel="stylesheet" href="error.css">
+</head>
+<body>
+    <div class="container-fluid vh-100">
+        <div class="row h-33"></div>
+        <div class="row h-33">
+            <div class="col-12 d-flex justify-content-center align-items-center flex-column">
+                <span class="fs-1" id="errorId"><b>404</b></span>
+                <span class="fs-5" id="errorMsg">Az oldal nem található</span>
+            </div>
+        </div>
+        <div class="row h-33">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <button id="backBtn" class="border border-2 border-dark rounded p-2 fs-5 d-flex justify-content-evenly align-items-center">
+                    <img id="backImg" src="../media/material-symbols--arrow-circle-left-outline-rounded.svg" alt="backIcon">
+                    <span id="backBtnLabel">Vissza</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../res/bootstrap.min.js"></script>
+    <script src="../res/global.js"></script>
+    <script src="error.js"></script>
+</body>
+</html>

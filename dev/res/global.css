@@ -1,0 +1,38 @@
+/* DEBUG CLASS */
+.debug *{
+    outline: 1px solid var(--error);
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Inter';
+    src: url('/dev/res/Inter.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Inter_Italic';
+    src: url('/dev/res/Inter_Italic.ttf') format('ttf');
+}
+
+/* Variables: font-color */
+:root {
+    --black: #000000;
+    --error: #C90000;
+    --grey: #B2B2B2;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    color: var(--black);
+}
+html {
+    cursor: default;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+.inputFields:placeholder-shown {
+    font-style: italic;
+}

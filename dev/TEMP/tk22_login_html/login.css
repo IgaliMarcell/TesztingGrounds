@@ -1,0 +1,80 @@
+/* 
+    Azért 80%-os a HTML és BODY height, mert pl.: telefonon
+    a billenytűzet kitakarná a login form-ot. Ez maradhat fixen,
+    de beállíthatjuk úgy is, hogy csak akkor "emeljük" meg a form-ot,
+    ha a billenytyűzet aktív (mondjuk fókuszba kerül az input).
+*/
+html, body {
+    height: 80%;
+}
+
+/*
+    Módosítom az alap bootstrap-es "container" class-al ellátott div-et, 
+    hogy ne rángassa szét a login formot. Legyen egy max szélesség meghatározva.
+*/
+#loginContainer {
+    max-width: 400px;
+}
+
+/*
+    Alapból amikor fókuszba kerül egy input, akkor megjelenik egy "outline" border.
+    Ez gusztustalan, így sürgősen kikapcsoljuk.
+*/
+.outline-none {
+    outline: none;
+}
+
+/*
+    Meghatározzuk az ikonnal ellátott input mező kinézetét, ahogyan a design fájlban szerepel.
+*/
+.iconInputBox {
+    border: 1px solid black;
+    border-radius: 7.5px;
+    padding: 3px;
+}
+
+.iconInput:placeholder-shown {
+    font-style: italic;
+}
+
+/*
+    Meghatározzuk az ikonnal ellátott egyedi gomb kinézetét, ahogyan a design fájlban szerepel.
+*/
+.iconCustomButton {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 7.5px;
+    padding: 3px;
+}
+
+.iconCustomButtonImage {
+    width: 24px;
+    height: 24px;
+}
+
+/*
+    Értelem szerűen az oldal alján látható "Még nincs fiókod?" hivatkozás stílusa.
+*/
+#registerLink {
+    position: absolute;
+    transform: translate(-50%);
+    bottom: 0;
+    left: 50%;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #B2B2B2;
+    font-weight: bolder;
+}
+
+/*
+    Kb. 300-330px-től kezdve kezdjük tesztelni a UI-t.
+*/
+@media (min-width: 576px) {  }
+
+@media (min-width: 768px) {  }
+
+@media (min-width: 992px) {  }
+
+@media (min-width: 1200px) {  }
+
+@media (min-width: 1400px) {  }
